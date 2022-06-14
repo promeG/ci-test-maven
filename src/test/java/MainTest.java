@@ -18,7 +18,7 @@ public class MainTest {
         Files.walk(root, maxDepth)
                 .skip(1)
                 .filter(Files::isDirectory)
-                .map(Path::getFileName)
+                .map(Path::toAbsolutePath)
                 .forEach(System.out::println);
 
 //        showFiles(dir.listFiles());
