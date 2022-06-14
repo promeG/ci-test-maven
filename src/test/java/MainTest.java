@@ -1,4 +1,5 @@
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -24,6 +25,12 @@ public class MainTest {
         System.out.println("==================");
 
         showFiles(new File("/home/travis/.m2/").listFiles());
+
+        File testFile = new File(new File("/home/travis/.m2/repository/org/example/ci-test-maven/"), "test.txt");
+        FileWriter fw = new FileWriter(testFile);
+        fw.write("hello");
+        fw.close();
+
     }
 
     private void showFiles(File[] files) {
