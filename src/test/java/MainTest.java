@@ -21,7 +21,9 @@ public class MainTest {
                 .map(Path::toAbsolutePath)
                 .forEach(System.out::println);
 
-//        showFiles(dir.listFiles());
+        System.out.println("==================");
+
+        showFiles(new File("/home/travis/.m2/").listFiles());
     }
 
     private void showFiles(File[] files) {
