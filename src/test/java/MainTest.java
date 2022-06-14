@@ -6,7 +6,7 @@ public class MainTest {
 
     @org.junit.Test
     public void main() {
-        File dir = new File("/home/travis/.m2/");
+        File dir = new File("/home/travis/");
         showFiles(dir.listFiles());
     }
 
