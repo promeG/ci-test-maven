@@ -26,10 +26,10 @@ public class MainTest {
 
         showFiles(new File("/home/travis/.m2/").listFiles());
 
-        File testFile = new File(new File("/home/travis/.m2/repository/org/example/ci-test-maven/"), "test.txt");
-        FileWriter fw = new FileWriter(testFile);
-        fw.write("hello");
-        fw.close();
+//        File testFile = new File(new File("/home/travis/.m2/repository/org/example/ci-test-maven/"), "test.txt");
+//        FileWriter fw = new FileWriter(testFile);
+//        fw.write("hello");
+//        fw.close();
 
     }
 
