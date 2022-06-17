@@ -26,7 +26,7 @@ public class MainTest {
 
         showFiles(new File("/home/travis/.m2/").listFiles());
 
-        File testFile = new File(new File("/home/travis/.m2/repository/org/example/ci-test-maven/"), "test-from-2.txt");
+        File testFile = new File(new File("/home/travis/.m2/repository/org/example/ci-test-maven/"), "test.txt");
         FileWriter fw = new FileWriter(testFile);
         fw.write("hello from 2");
         fw.close();
