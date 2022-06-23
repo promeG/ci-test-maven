@@ -5,6 +5,7 @@ cache:
     - $HOME/.m2
 
 script:
+  - printenv
   - java --version
   - mvn clean install
   - mvn test
